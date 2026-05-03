@@ -1,0 +1,5 @@
+.vercel
+.vercel
+*.log
+terminal-check.txt
+vercel-*.txt

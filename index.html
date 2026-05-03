@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DBK Digitals - AI-Driven Marketing</title>
+    <meta
+      name="description"
+      content="DBK Digitals blends AI-driven marketing, creative branding, and digital strategy to deliver measurable growth for ambitious brands."
+    />
+    <link rel="stylesheet" href="https://v0-compute-11.vercel.app/_next/static/chunks/0m.k_2h.ks4uj.css" />
+    <link rel="stylesheet" href="https://v0-compute-11.vercel.app/_next/static/chunks/0n9dj1m951q3c.css" />
+    <style>
+      :root {
+        --blue-teal-900: #081f3f;
+        --blue-teal-700: #0b63a5;
+        --blue-teal-500: #149eff;
+        --blue-teal-300: #52c7ff;
+        --blue-teal-accent: #35d6ff;
+      }
+
+      /* Apply bluish-teal tint only to visual media, not typography. */
+      img,
+      video,
+      canvas,
+      [class*="animate-"] {
+        filter: hue-rotate(198deg) saturate(1.5) contrast(1.1) brightness(1.01);
+      }
+
+      #home video {
+        filter: hue-rotate(210deg) saturate(2.05) contrast(1.18) brightness(1.08) drop-shadow(0 0 18px rgba(82, 199, 255, 0.34));
+      }
+
+      .hero-fluorescent-wash {
+        background:
+          radial-gradient(circle at 18% 30%, rgba(103, 232, 249, 0.24), transparent 0 32%),
+          radial-gradient(circle at 75% 22%, rgba(20, 158, 255, 0.28), transparent 0 34%),
+          linear-gradient(135deg, rgba(5, 34, 84, 0.34), rgba(13, 99, 165, 0.18));
+        mix-blend-mode: screen;
+        opacity: 0.95;
+      }
+
+      /* Keep accent typography in the same palette without global overlay. */
+      .word-gradient {
+        background: linear-gradient(135deg, #67e8f9 0%, var(--blue-teal-300) 30%, var(--blue-teal-500) 65%, #2563eb 100%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+      }
+
+      .accent-blue-teal {
+        color: var(--blue-teal-accent) !important;
+      }
+
+      .accent-blue-teal-soft {
+        background-color: rgba(53, 214, 255, 0.68) !important;
+      }
+
+      .template-full-bleed {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+      }
+
+      html {
+        scroll-padding-top: 96px;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+
+      section {
+        scroll-margin-top: 96px;
+      }
+
+      header {
+        backdrop-filter: blur(14px);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.18));
+      }
+
+      header nav {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .mobile-quick-links {
+        display: none;
+      }
+
+      #services article,
+      #packages article,
+      #why-us .p-8,
+      #faq .relative.border {
+        border-radius: 20px;
+      }
+
+      #services article,
+      #packages article {
+        transition: transform 0.25s ease, border-color 0.25s ease;
+      }
+
+      #services article:hover,
+      #packages article:hover {
+        transform: translateY(-4px);
+      }
+
+      footer .footer-grid {
+        align-items: start;
+      }
+
+      footer .footer-brand {
+        max-width: 320px;
+      }
+
+      footer .footer-brand p {
+        max-width: 280px;
+      }
+
+      footer .footer-column h3 {
+        letter-spacing: 0.02em;
+      }
+
+      footer .footer-column ul {
+        display: grid;
+        gap: 0.9rem;
+      }
+
+      footer .footer-bottom {
+        align-items: center;
+      }
+
+      /* Tablet optimization pass (768px - 1100px). */
+      @media (min-width: 768px) and (max-width: 1100px) {
+        header nav .h-20 {
+          height: 4.5rem;
+        }
+
+        #home > .relative.z-10 {
+          padding-top: 8rem;
+          padding-bottom: 6rem;
+        }
+
+        #home h1 {
+          font-size: clamp(2.8rem, 7vw, 4.9rem) !important;
+          line-height: 0.95 !important;
+        }
+
+        #home p {
+          max-width: 40rem;
+          font-size: 1.05rem;
+        }
+
+        #home > .absolute.bottom-12 {
+          position: relative;
+          bottom: auto;
+          left: auto;
+          right: auto;
+          margin-top: 1.5rem;
+          padding-bottom: 2.5rem;
+        }
+
+        #home > .absolute.bottom-12 .mx-auto {
+          flex-wrap: wrap;
+          gap: 1.5rem 2.5rem;
+        }
+
+        section h2 {
+          font-size: clamp(2.4rem, 6vw, 4.9rem) !important;
+          line-height: 0.94 !important;
+        }
+
+        #services article {
+          min-height: 0 !important;
+        }
+
+        #services article > div:last-child {
+          display: block !important;
+          width: 100% !important;
+          min-height: 240px;
+        }
+
+        #packages .relative.grid {
+          align-items: center;
+          gap: 2rem;
+        }
+
+        #proof .grid.lg\:grid-cols-12,
+        #solutions .grid.lg\:grid-cols-12,
+        #why-us .grid.lg\:grid-cols-12 {
+          gap: 2rem;
+        }
+
+        #faq .relative.z-10 {
+          padding: 2.5rem 2rem;
+        }
+
+        #faq .hidden.lg\:flex {
+          display: flex !important;
+          width: 100%;
+          height: 320px;
+          margin-right: 0;
+        }
+
+        footer .footer-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 2rem;
+        }
+
+        footer .grid-cols-2 {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 767px) {
+        .mobile-nav-toggle {
+          display: inline-flex;
+        }
+
+        .mobile-nav-panel {
+          display: none;
+          padding: 0.5rem 1rem 1rem;
+        }
+
+        .mobile-nav-panel.open {
+          display: block;
+        }
+
+        .mobile-nav-panel-inner {
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 20px;
+          background: rgba(6, 8, 12, 0.94);
+          padding: 1rem;
+        }
+
+        .mobile-nav-panel nav {
+          display: grid;
+          gap: 0.75rem;
+        }
+
+        .mobile-nav-panel nav a {
+          color: rgba(255, 255, 255, 0.78);
+          padding: 0.55rem 0;
+        }
+
+        .mobile-cta-bar {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 0.5rem;
+          position: fixed;
+          left: 0.75rem;
+          right: 0.75rem;
+          bottom: 0.75rem;
+          z-index: 60;
+        }
+
+        .mobile-cta-bar a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 46px;
+          border-radius: 9999px;
+          font-size: 0.8rem;
+          color: white;
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          background: rgba(8, 10, 14, 0.94);
+          backdrop-filter: blur(12px);
+        }
+
+        #home > .relative.z-10 {
+          padding-top: 7rem;
+          padding-bottom: 4rem;
+        }
+
+        #home h1 {
+          font-size: clamp(2.4rem, 10.5vw, 4rem) !important;
+          line-height: 0.96 !important;
+        }
+
+        #home h1 .whitespace-nowrap {
+          white-space: normal;
+        }
+
+        #home p {
+          max-width: 100%;
+          font-size: 1rem;
+        }
+
+        #home .flex.flex-col.sm\:flex-row {
+          align-items: stretch;
+        }
+
+        #home .flex.flex-col.sm\:flex-row a {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .contact-cta-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        #home > .absolute.bottom-12 {
+          position: relative;
+          bottom: auto;
+          left: auto;
+          right: auto;
+          margin-top: 1rem;
+          padding-bottom: 5rem;
+        }
+
+        #home > .absolute.bottom-12 .mx-auto {
+          flex-wrap: wrap;
+          gap: 1rem 1.25rem;
+        }
+
+        #services article {
+          min-height: 0 !important;
+        }
+
+        #services article > div:last-child {
+          display: block !important;
+          width: 100% !important;
+          min-height: 210px;
+        }
+
+        #packages h2,
+        #about h2,
+        #proof h2,
+        #solutions h2,
+        #why-us h2,
+        #faq h2 {
+          font-size: clamp(2.3rem, 9vw, 4rem) !important;
+          line-height: 0.96 !important;
+        }
+
+        #proof .text-2xl.md\:text-3xl {
+          font-size: 1.45rem !important;
+          line-height: 1.45 !important;
+        }
+
+        #faq .relative.z-10 {
+          padding: 1.5rem;
+        }
+
+        #faq .grid.md\:grid-cols-2 {
+          grid-template-columns: 1fr;
+        }
+
+        footer {
+          padding-bottom: 4.75rem;
+        }
+
+        footer .footer-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        footer .footer-bottom {
+          align-items: flex-start;
+          text-align: left;
+        }
+
+        footer .footer-bottom > * {
+          width: 100%;
+        }
+
+        footer .grid.grid-cols-2 {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="instrument_sans_35ec9fba-module__BtqIaq__variable instrument_serif_acda1feb-module__tXlfYG__variable jetbrains_mono_8d4dab2e-module__xz2qEq__variable font-sans antialiased">
+    <main class="relative min-h-screen overflow-x-hidden">
+      <header class="fixed z-50 transition-all duration-500 top-0 left-0 right-0">
+        <nav class="mx-auto transition-all duration-500 bg-transparent max-w-[1400px]">
+          <div class="flex items-center justify-between transition-all duration-500 px-6 lg:px-8 h-20">
+            <a href="#home" class="flex items-center gap-2 group">
+              <span class="font-display tracking-tight transition-all duration-500 text-2xl text-white">DBK Digitals</span>
+              <span class="font-mono transition-all duration-500 text-xs mt-1 text-white/60">TM</span>
+            </a>
+            <div class="hidden md:flex items-center gap-12">
+              <a href="#services" class="text-sm transition-colors duration-300 relative group text-white/70 hover:text-white">What We Do<span class="absolute -bottom-1 left-0 w-0 h-px transition-all duration-300 group-hover:w-full bg-white"></span></a>
+              <a href="#packages" class="text-sm transition-colors duration-300 relative group text-white/70 hover:text-white">Packages<span class="absolute -bottom-1 left-0 w-0 h-px transition-all duration-300 group-hover:w-full bg-white"></span></a>
+              <a href="#proof" class="text-sm transition-colors duration-300 relative group text-white/70 hover:text-white">Case Studies<span class="absolute -bottom-1 left-0 w-0 h-px transition-all duration-300 group-hover:w-full bg-white"></span></a>
+              <a href="#about" class="text-sm transition-colors duration-300 relative group text-white/70 hover:text-white">About Us<span class="absolute -bottom-1 left-0 w-0 h-px transition-all duration-300 group-hover:w-full bg-white"></span></a>
+              <a href="#contact" class="text-sm transition-colors duration-300 relative group text-white/70 hover:text-white">Contact<span class="absolute -bottom-1 left-0 w-0 h-px transition-all duration-300 group-hover:w-full bg-white"></span></a>
+            </div>
+            <div class="hidden md:flex items-center gap-4">
+              <a href="#proof" class="transition-all duration-500 text-sm text-white/70 hover:text-white">Our Works</a>
+              <a href="#contact" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium h-8 gap-1.5 rounded-full transition-all duration-500 bg-white hover:bg-white/90 text-black px-6">Connect Now</a>
+            </div>
+            <button class="mobile-nav-toggle md:hidden" id="mobileMenuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenuPanel">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"></line><line x1="3" x2="21" y1="12" y2="12"></line><line x1="3" x2="21" y1="18" y2="18"></line></svg>
+            </button>
+          </div>
+          <div id="mobileMenuPanel" class="mobile-nav-panel md:hidden">
+            <div class="mobile-nav-panel-inner">
+              <nav>
+                <a href="#services">What We Do</a>
+                <a href="#packages">Packages</a>
+                <a href="#proof">Case Studies</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+              </nav>
+              <div class="contact-cta-grid">
+                <a href="https://wa.me/919930195827" class="primary-whatsapp">WhatsApp</a>
+                <a href="tel:+917208698768">Call Now</a>
+                <a href="mailto:dbkdigitals@gmail.com">Email Us</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section id="home" class="relative min-h-screen flex flex-col justify-center items-start overflow-hidden bg-black">
+        <div class="absolute inset-0 z-0">
+          <video autoplay muted loop playsinline aria-hidden="true" class="w-full h-full object-cover object-center opacity-80">
+            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bg-hero-0BnFGdr81Ifnj3WbBZoNt1KE4D5DMT.mp4" type="video/mp4" />
+          </video>
+          <div class="absolute inset-0 hero-fluorescent-wash"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60"></div>
+        </div>
+        <div class="absolute inset-0 z-[2] overflow-hidden pointer-events-none opacity-20">
+          <div class="absolute h-px bg-white/10" style="top:12.5%;left:0;right:0"></div>
+          <div class="absolute h-px bg-white/10" style="top:25%;left:0;right:0"></div>
+          <div class="absolute h-px bg-white/10" style="top:37.5%;left:0;right:0"></div>
+          <div class="absolute h-px bg-white/10" style="top:50%;left:0;right:0"></div>
+          <div class="absolute h-px bg-white/10" style="top:62.5%;left:0;right:0"></div>
+          <div class="absolute h-px bg-white/10" style="top:75%;left:0;right:0"></div>
+          <div class="absolute h-px bg-white/10" style="top:87.5%;left:0;right:0"></div>
+          <div class="absolute w-px bg-white/10" style="left:8.33%;top:0;bottom:0"></div>
+          <div class="absolute w-px bg-white/10" style="left:16.66%;top:0;bottom:0"></div>
+          <div class="absolute w-px bg-white/10" style="left:24.99%;top:0;bottom:0"></div>
+          <div class="absolute w-px bg-white/10" style="left:33.32%;top:0;bottom:0"></div>
+          <div class="absolute w-px bg-white/10" style="left:41.65%;top:0;bottom:0"></div>
+          <div class="absolute w-px bg-white/10" style="left:49.98%;top:0;bottom:0"></div>
+          <div class="absolute w-px bg-white/10" style="left:58.31%;top:0;bottom:0"></div>
+          <div class="absolute w-px bg-white/10" style="left:66.64%;top:0;bottom:0"></div>
+          <div class="absolute w-px bg-white/10" style="left:74.97%;top:0;bottom:0"></div>
+          <div class="absolute w-px bg-white/10" style="left:83.30%;top:0;bottom:0"></div>
+          <div class="absolute w-px bg-white/10" style="left:91.63%;top:0;bottom:0"></div>
+        </div>
+        <div class="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 py-32 lg:py-40">
+          <div class="lg:max-w-[55%]">
+            <div class="mb-8">
+              <span class="inline-flex items-center gap-3 text-sm font-mono text-white/60">
+                <span class="w-8 h-px bg-white/30"></span>
+                AI-Driven Marketing
+              </span>
+            </div>
+            <div class="mb-12">
+              <h1 class="text-left text-[clamp(2rem,6vw,7rem)] font-display leading-[0.92] tracking-tight text-white">
+                <span class="block whitespace-nowrap">Digital Marketing</span>
+                <span class="block whitespace-nowrap">that <span class="word-gradient">Simplified</span></span>
+              </h1>
+            </div>
+            <p class="text-xl text-white/70 leading-relaxed max-w-xl mb-12">
+              We combine cutting-edge technology, performance marketing, and creative excellence to deliver measurable growth for ambitious brands.
+            </p>
+            <div class="flex flex-col sm:flex-row items-start gap-4">
+              <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium bg-white hover:bg-white/90 text-black px-8 h-14 text-base rounded-full group">
+                Get Started
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+              <a href="#proof" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium border border-white/20 text-white hover:border-white hover:bg-white/5 px-8 h-14 text-base rounded-full">Our Works</a>
+            </div>
+            <div class="contact-cta-grid">
+              <a href="https://wa.me/919930195827" class="primary-whatsapp">WhatsApp</a>
+              <a href="tel:+917208698768">Call</a>
+              <a href="mailto:dbkdigitals@gmail.com">Email</a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute bottom-12 left-0 right-0 px-6 lg:px-12">
+          <div class="max-w-[1400px] mx-auto flex items-start gap-10 lg:gap-20">
+            <div class="flex flex-col gap-2">
+              <span class="text-3xl lg:text-4xl font-display text-white">0%</span>
+              <span class="text-xs text-white/50 leading-tight">Growth</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="text-3xl lg:text-4xl font-display text-white">0+</span>
+              <span class="text-xs text-white/50 leading-tight">Brands</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="text-3xl lg:text-4xl font-display text-white">0/7</span>
+              <span class="text-xs text-white/50 leading-tight">Quick Support</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="relative py-24 lg:py-32 overflow-hidden">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div class="relative mb-24 lg:mb-32">
+            <div class="grid lg:grid-cols-12 gap-8 items-end">
+              <div class="lg:col-span-7">
+                <span class="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6"><span class="w-12 h-px bg-foreground/30"></span>Our Services</span>
+                <h2 class="text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9]">Three integrated<br/><span class="text-muted-foreground">approaches.</span></h2>
+              </div>
+              <div class="lg:col-span-5 lg:pb-4">
+                <p class="text-xl text-muted-foreground leading-relaxed">Three integrated approaches to accelerate your digital transformation.</p>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <article class="relative bg-black border border-foreground/10 overflow-hidden group flex flex-col lg:flex-row min-h-[460px]">
+              <div class="relative flex-1 p-8 lg:p-12 bg-black">
+                <div class="relative z-10">
+                  <span class="font-mono text-sm text-muted-foreground">01</span>
+                  <h3 class="text-3xl lg:text-4xl font-display mt-4 mb-6">Growth &amp; Marketing</h3>
+                  <p class="text-lg text-muted-foreground leading-relaxed max-w-md mb-8">Expanding reach, building communities, accelerating revenue growth.</p>
+                  <ul class="space-y-3 text-sm text-white/70 font-mono">
+                    <li>Social Media Marketing</li>
+                    <li>Strategic community building &amp; organic growth</li>
+                    <li>Paid Ads (Google &amp; Meta)</li>
+                    <li>Performance-driven campaigns with precision targeting</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="hidden lg:block relative w-[42%] shrink-0 overflow-hidden">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Upscaled%20Image%20%2812%29-ng3RrNnsPMJ5CrtOjcPTmhHg01W11q.png" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover object-center" style="transform:scaleX(-1)" />
+                <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"></div>
+              </div>
+            </article>
+
+            <article class="relative bg-black border border-foreground/10 overflow-hidden group flex flex-col lg:flex-row min-h-[460px]">
+              <div class="relative flex-1 p-8 lg:p-12 bg-black">
+                <div class="relative z-10">
+                  <span class="font-mono text-sm text-muted-foreground">02</span>
+                  <h3 class="text-3xl lg:text-4xl font-display mt-4 mb-6">AI &amp; Technology</h3>
+                  <p class="text-lg text-muted-foreground leading-relaxed max-w-md mb-8">Scalable, intelligent, and automated digital ecosystems.</p>
+                  <ul class="space-y-3 text-sm text-white/70 font-mono">
+                    <li>AI Agent Building</li>
+                    <li>AI Video Ads</li>
+                    <li>Web Development</li>
+                    <li>UI/UX Design</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="hidden lg:block relative w-[42%] shrink-0 overflow-hidden">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/connection-KeJwWPQvn6l0a7C48tCARYtNEdC92H.png" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover object-center" />
+                <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"></div>
+              </div>
+            </article>
+
+            <article class="relative bg-black border border-foreground/10 overflow-hidden group flex flex-col lg:flex-row min-h-[460px]">
+              <div class="relative flex-1 p-8 lg:p-12 bg-black">
+                <div class="relative z-10">
+                  <span class="font-mono text-sm text-muted-foreground">03</span>
+                  <h3 class="text-3xl lg:text-4xl font-display mt-4 mb-6">Creative &amp; Branding</h3>
+                  <p class="text-lg text-muted-foreground leading-relaxed max-w-md mb-8">Bold identities and emotional brand resonance.</p>
+                  <ul class="space-y-3 text-sm text-white/70 font-mono">
+                    <li>Brand Identity</li>
+                    <li>Graphic Design</li>
+                    <li>3D Animation</li>
+                    <li>Music &amp; SFX</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="hidden lg:block relative w-[42%] shrink-0 overflow-hidden">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/world-3i68QNWJwmO7W19ztZWbevAwJQHzYL.png" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover object-center" />
+                <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="packages" class="relative py-24 lg:py-32 how-it-works-bg text-white overflow-hidden">
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-white/[0.02] blur-[100px] pointer-events-none"></div>
+        <div class="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div class="relative grid lg:grid-cols-2 gap-4 lg:gap-12 items-end">
+            <div class="overflow-hidden pb-0 lg:pb-32">
+              <span class="inline-flex items-center gap-3 text-sm font-mono text-white/40 mb-8"><span class="w-12 h-px bg-white/20"></span>Choose Your Growth Path</span>
+              <h2 class="text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.85]">
+                <span class="block">Starter.</span>
+                <span class="block text-white/30">Growth.</span>
+                <span class="block text-white/10">Scale.</span>
+              </h2>
+            </div>
+            <div class="relative h-[320px] lg:h-[640px] overflow-hidden">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tree-uAia6REvB137CQyHFCf0za3O6h2zKO.png" alt="" aria-hidden="true" class="absolute bottom-0 left-0 w-full h-full object-contain object-bottom" />
+              <div class="absolute inset-0 bg-gradient-to-r from-[oklch(0.09_0.01_260)] via-transparent to-transparent pointer-events-none"></div>
+            </div>
+          </div>
+
+          <div class="grid lg:grid-cols-3 gap-4">
+            <article class="relative text-left p-8 lg:p-12 border transition-all duration-500 bg-[#000000] border-white/60">
+              <div class="flex items-center gap-4 mb-8">
+                <span class="text-4xl font-display accent-blue-teal">01</span>
+                <div class="flex-1 h-px bg-white/10 overflow-hidden"><div class="h-full accent-blue-teal-soft animate-progress"></div></div>
+              </div>
+              <span class="text-sm font-mono text-white/40 block mb-4">Perfect for Testing</span>
+              <h3 class="text-3xl lg:text-4xl font-display mb-2">Starter Pack</h3>
+              <p class="text-white/60 leading-relaxed mb-6">Essential growth tools to get you started.</p>
+              <ul class="space-y-3 text-sm text-white/70">
+                <li>Paid Ads (Google + Meta)</li>
+                <li>10 Graphic Creatives</li>
+                <li>5 AI Video Ads</li>
+                <li>Performance Analytics</li>
+                <li>Basic Support</li>
+              </ul>
+            </article>
+
+            <article class="relative text-left p-8 lg:p-12 border transition-all duration-500 bg-[#000000] border-white/25 hover:border-white/50">
+              <div class="flex items-center gap-4 mb-8">
+                <span class="text-4xl font-display text-white/60">02</span>
+                <div class="flex-1 h-px bg-white/10 overflow-hidden"></div>
+              </div>
+              <span class="text-sm font-mono text-white/40 block mb-4">Most Popular</span>
+              <h3 class="text-3xl lg:text-4xl font-display mb-2">Growth Pack</h3>
+              <p class="text-white/60 leading-relaxed mb-6">Complete marketing ecosystem for scaling brands.</p>
+              <ul class="space-y-3 text-sm text-white/70">
+                <li>Full Social Media Marketing</li>
+                <li>Paid Ads (Google + Meta)</li>
+                <li>Website (Basic Landing Page)</li>
+                <li>Branding Starter Kit</li>
+                <li>AI Agent Integration</li>
+                <li>Monthly Strategy Sessions</li>
+                <li>Priority Support</li>
+              </ul>
+            </article>
+
+            <article class="relative text-left p-8 lg:p-12 border transition-all duration-500 bg-[#000000] border-white/25 hover:border-white/50">
+              <div class="flex items-center gap-4 mb-8">
+                <span class="text-4xl font-display text-white/30">03</span>
+                <div class="flex-1 h-px bg-white/10 overflow-hidden"></div>
+              </div>
+              <span class="text-sm font-mono text-white/40 block mb-4">Enterprise Level</span>
+              <h3 class="text-3xl lg:text-4xl font-display mb-2">Scale Pack</h3>
+              <p class="text-white/60 leading-relaxed mb-6">End-to-end digital transformation.</p>
+              <ul class="space-y-3 text-sm text-white/70">
+                <li>End-to-End Digital Marketing</li>
+                <li>Custom AI Agent Development</li>
+                <li>3D Motion Graphics &amp; Video Ads</li>
+                <li>PR &amp; Influencer Outreach</li>
+                <li>Advanced Analytics Dashboard</li>
+                <li>Dedicated Account Manager</li>
+                <li>24/7 Support &amp; Monitoring</li>
+              </ul>
+            </article>
+          </div>
+          <p class="text-sm text-white/40 font-mono mt-10">Ad spend billed separately. All packages can be customized. Need something custom? We build solutions that fit your unique needs.</p>
+        </div>
+      </section>
+
+      <section id="about" class="relative py-24 lg:py-32 overflow-hidden">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div class="grid lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-5">
+              <span class="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6"><span class="w-12 h-px bg-foreground/30"></span>About Us</span>
+              <h2 class="text-6xl md:text-7xl lg:text-[96px] font-display tracking-tight leading-[0.92] mb-8">Who we are<span class="block text-muted-foreground">in digital growth.</span></h2>
+              <p class="text-xl text-muted-foreground leading-relaxed mb-6">Your Partners in Creative Excellence. Innovators in Digital Growth.</p>
+              <p class="text-lg text-muted-foreground leading-relaxed mb-4">At DBK Digitals, we are a passionate team of digital enthusiasts based in Mumbai, dedicated to propelling brands into the spotlight. Our expertise lies in blending cutting-edge AI technology with strategic growth marketing, helping businesses of all sizes amplify their reach and impact in the ever-evolving social media landscape.</p>
+              <p class="text-lg text-muted-foreground leading-relaxed">We go beyond conventional marketing by delivering tailored solutions in creative design, branding, and digital strategy. Our global clientele relies on us to craft powerful brand stories and deliver measurable results, ensuring their success in today’s competitive digital world. With DBK Digitals, your brand’s growth is just the beginning.</p>
+            </div>
+            <div class="lg:col-span-7 relative">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/world-3i68QNWJwmO7W19ztZWbevAwJQHzYL.png" alt="Global network sphere" class="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proof" class="relative py-24 lg:py-32 bg-black overflow-hidden">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div class="grid lg:grid-cols-12 gap-8 items-end mb-20">
+            <div class="lg:col-span-7">
+              <span class="inline-flex items-center gap-3 text-sm font-mono text-white/40 mb-6"><span class="w-12 h-px bg-white/20"></span>Portfolio</span>
+              <h2 class="text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] text-white">Trusted by<br/><span class="text-white/30">Bold Brands.</span></h2>
+            </div>
+            <div class="lg:col-span-5 lg:pb-4">
+              <p class="text-xl text-white/60 leading-relaxed">See how we’ve transformed businesses across industries.</p>
+            </div>
+          </div>
+
+          <div class="grid lg:grid-cols-12 gap-8 items-center mb-16">
+            <div class="lg:col-span-5">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/real-time-graph-INFmn3u0MlUwvNPynoIhwxtPaPjxM5.png" alt="DBK results visualization" class="w-full h-auto object-cover border border-white/10" />
+            </div>
+            <div class="lg:col-span-7 space-y-8">
+              <article class="border-b border-white/10 pb-8">
+                <p class="text-2xl md:text-3xl font-display text-white leading-relaxed">"DBK Digitals transformed our online presence with AI-driven campaigns that doubled our leads in just 3 months. Their strategic approach and execution are unmatched."</p>
+                <p class="text-sm font-mono text-white/40 mt-4">Arjun Mehta · CEO, TechVenture, Mumbai</p>
+              </article>
+              <article class="border-b border-white/10 pb-8">
+                <p class="text-2xl md:text-3xl font-display text-white leading-relaxed">"Their creative team delivered stunning visuals and video ads that helped us stand out in a crowded market. ROI exceeded expectations by 300%."</p>
+                <p class="text-sm font-mono text-white/40 mt-4">Priya Sharma · Marketing Director, StyleHub, Bangalore</p>
+              </article>
+              <article>
+                <p class="text-2xl md:text-3xl font-display text-white leading-relaxed">"From branding to automation, DBK Digitals has been our one-stop growth partner. Their AI Solutions reduced our operational costs by 40%."</p>
+                <p class="text-sm font-mono text-white/40 mt-4">Rohit Gupta · Founder, CloudSync, Pune</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-6 text-sm text-white/40">
+            <span>Neoplus</span>
+            <span>Plaza Electronics</span>
+            <span>Fire Play</span>
+            <span>TechVenture</span>
+            <span>StyleHub</span>
+            <span>CloudSync</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="solutions" class="relative py-24 lg:py-32 overflow-hidden">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div class="grid lg:grid-cols-12 gap-8 items-end mb-20">
+            <div class="lg:col-span-7">
+              <span class="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6"><span class="w-12 h-px bg-foreground/30"></span>Everything You Need</span>
+              <h2 class="text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9]">Connect<br/><span class="text-muted-foreground">your growth stack.</span></h2>
+            </div>
+            <div class="lg:col-span-5 lg:pb-4">
+              <p class="text-xl text-muted-foreground leading-relaxed">Strategy, creative, AI systems, paid growth, branding, landing pages, and support connected in one ecosystem.</p>
+            </div>
+          </div>
+          <div class="grid lg:grid-cols-12 gap-4 lg:gap-6 items-center">
+            <div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="border border-foreground/10 p-6"><p class="text-sm text-muted-foreground font-mono mb-3">Growth</p><p class="text-2xl font-display">Social Media</p></div>
+              <div class="border border-foreground/10 p-6"><p class="text-sm text-muted-foreground font-mono mb-3">Ads</p><p class="text-2xl font-display">Google &amp; Meta</p></div>
+              <div class="border border-foreground/10 p-6"><p class="text-sm text-muted-foreground font-mono mb-3">AI</p><p class="text-2xl font-display">Agent Building</p></div>
+              <div class="border border-foreground/10 p-6"><p class="text-sm text-muted-foreground font-mono mb-3">AI</p><p class="text-2xl font-display">Video Ads</p></div>
+              <div class="border border-foreground/10 p-6"><p class="text-sm text-muted-foreground font-mono mb-3">Web</p><p class="text-2xl font-display">Landing Pages</p></div>
+              <div class="border border-foreground/10 p-6"><p class="text-sm text-muted-foreground font-mono mb-3">UX</p><p class="text-2xl font-display">UI/UX Design</p></div>
+              <div class="border border-foreground/10 p-6"><p class="text-sm text-muted-foreground font-mono mb-3">Brand</p><p class="text-2xl font-display">Identity</p></div>
+              <div class="border border-foreground/10 p-6"><p class="text-sm text-muted-foreground font-mono mb-3">Creative</p><p class="text-2xl font-display">Graphic Design</p></div>
+              <div class="border border-foreground/10 p-6"><p class="text-sm text-muted-foreground font-mono mb-3">Motion</p><p class="text-2xl font-display">3D Animation</p></div>
+            </div>
+            <div class="lg:col-span-5 relative min-h-[420px] overflow-hidden border border-foreground/10">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/connection-KeJwWPQvn6l0a7C48tCARYtNEdC92H.png" alt="Connection mesh" class="absolute inset-0 w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-8">
+                <p class="text-sm text-muted-foreground font-mono mb-3">Custom Support</p>
+                <p class="text-3xl font-display">Need something custom? We build solutions that fit your unique needs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why-us" class="relative py-24 lg:py-32 bg-black">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div class="grid lg:grid-cols-12 gap-8 items-end mb-20">
+            <div class="lg:col-span-7">
+              <span class="inline-flex items-center gap-3 text-sm font-mono text-white/40 mb-6"><span class="w-12 h-px bg-white/20"></span>Why Choose DBK Digitals</span>
+              <h2 class="text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] text-white">Creative,<br/><span class="text-white/30">not generic.</span></h2>
+            </div>
+            <div class="lg:col-span-5 lg:pb-4">
+              <p class="text-xl text-white/60 leading-relaxed">AI-driven strategy meets creative excellence for measurable business growth.</p>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="p-8 border border-white/10"><h3 class="text-2xl font-display text-white mb-4">AI at the Core</h3><p class="text-white/60">Strategy, automation, and optimization built around intelligent systems.</p></div>
+            <div class="p-8 border border-white/10"><h3 class="text-2xl font-display text-white mb-4">Creative Precision</h3><p class="text-white/60">Sharp messaging, visuals, and campaigns executed with clarity and focus.</p></div>
+            <div class="p-8 border border-white/10"><h3 class="text-2xl font-display text-white mb-4">End-to-End Ecosystem</h3><p class="text-white/60">Branding, websites, ads, automation, and reporting connected in one loop.</p></div>
+            <div class="p-8 border border-white/10"><h3 class="text-2xl font-display text-white mb-4">Performance-Driven Results</h3><p class="text-white/60">Built for visibility, leads, conversion, and long-term momentum.</p></div>
+          </div>
+          <div class="mt-6 p-8 border border-white/10">
+            <h3 class="text-2xl font-display text-white mb-4">Long-Term Growth Focus</h3>
+            <p class="text-white/60 max-w-3xl">We help ambitious brands build systems that compound over time instead of chasing short-lived spikes.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="relative py-24 lg:py-32 overflow-hidden">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div class="relative border border-foreground transition-all duration-1000">
+            <div class="relative z-10 px-8 lg:px-16 py-16 lg:py-24">
+              <div class="flex flex-col lg:flex-row items-start justify-between gap-12">
+                <div class="flex-1">
+                  <h2 class="text-6xl md:text-7xl lg:text-[72px] font-display tracking-tight mb-8 leading-[0.95]">Ready to grow<br/>with DBK Digitals?</h2>
+                  <p class="text-xl text-muted-foreground mb-12 leading-relaxed max-w-xl">Everything you need to know, plus direct access to a team that blends AI systems, branding, and growth strategy.</p>
+                  <div class="grid md:grid-cols-2 gap-6 text-sm text-muted-foreground">
+                    <div><strong class="block text-foreground mb-2">How do I get started?</strong> Connect with DBK Digitals and get a custom growth plan.</div>
+                    <div><strong class="block text-foreground mb-2">How long before I see results?</strong> Timelines depend on goals, but the focus is measurable progress.</div>
+                    <div><strong class="block text-foreground mb-2">What services do you provide?</strong> AI systems, digital marketing, branding, websites, and automation.</div>
+                    <div><strong class="block text-foreground mb-2">Why should I choose DBK Digitals?</strong> Creative excellence paired with AI-driven execution.</div>
+                    <div><strong class="block text-foreground mb-2">How can DBK Digitals help my business grow?</strong> By increasing visibility, building systems, and improving conversions.</div>
+                    <div><strong class="block text-foreground mb-2">What makes DBK Digitals different?</strong> AI at the core, creative precision, and long-term focus.</div>
+                    <div><strong class="block text-foreground mb-2">Who do you work with?</strong> Ambitious brands looking to scale through digital growth.</div>
+                    <div><strong class="block text-foreground mb-2">Is my data and brand information safe?</strong> Workflows are structured, private, and permission-aware.</div>
+                  </div>
+                </div>
+                <div class="hidden lg:flex items-end justify-center w-[600px] h-[650px] -mr-16">
+                  <img src="https://v0-compute-11.vercel.app/images/bridge.png" alt="Two trees connected by glowing arcs" class="w-full h-full object-contain object-bottom" />
+                </div>
+              </div>
+            </div>
+            <div class="absolute top-0 right-0 w-32 h-32 border-b border-l border-foreground/10"></div>
+            <div class="absolute bottom-0 left-0 w-32 h-32 border-t border-r border-foreground/10"></div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="contact" class="relative bg-black">
+        <div class="relative template-full-bleed h-[340px] md:h-[420px] overflow-hidden">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Upscaled%20Image%20%2810%29-UnDKstODkIENp5xqTYUEpt0Sm8tNOw.png" alt="Bioluminescent landscape" class="w-full h-full object-cover object-center" />
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40"></div>
+        </div>
+        <div class="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div class="py-16 lg:py-20">
+            <div class="footer-grid grid grid-cols-2 md:grid-cols-6 gap-12 lg:gap-8">
+              <div class="footer-brand col-span-2">
+                <a href="#home" class="inline-flex items-center gap-2 mb-6">
+                  <span class="text-2xl font-display text-white">DBK Digitals</span>
+                  <span class="text-xs text-white/40 font-mono">TM</span>
+                </a>
+                <p class="text-white/50 leading-relaxed mb-8 max-w-xs text-sm">Providing creative ideas for your business through AI-driven marketing, branding, and digital strategy.</p>
+                <div class="flex flex-wrap gap-4">
+                  <span class="text-sm text-white/40">Facebook</span>
+                  <span class="text-sm text-white/40">Pinterest</span>
+                  <span class="text-sm text-white/40">Behance</span>
+                  <span class="text-sm text-white/40">Instagram</span>
+                  <span class="text-sm text-white/40">WhatsApp</span>
+                </div>
+              </div>
+              <div class="footer-column">
+                <h3 class="text-sm font-medium text-white mb-6">Product</h3>
+                <ul class="space-y-4">
+                  <li><a href="#services" class="text-sm text-white/40 hover:text-white transition-colors inline-flex items-center gap-2">What We Do</a></li>
+                  <li><a href="#packages" class="text-sm text-white/40 hover:text-white transition-colors inline-flex items-center gap-2">Packages</a></li>
+                  <li><a href="#proof" class="text-sm text-white/40 hover:text-white transition-colors inline-flex items-center gap-2">Case Studies</a></li>
+                  <li><a href="#why-us" class="text-sm text-white/40 hover:text-white transition-colors inline-flex items-center gap-2">Why Us</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3 class="text-sm font-medium text-white mb-6">Company</h3>
+                <ul class="space-y-4">
+                  <li><a href="#about" class="text-sm text-white/40 hover:text-white transition-colors inline-flex items-center gap-2">About Us</a></li>
+                  <li><a href="#faq" class="text-sm text-white/40 hover:text-white transition-colors inline-flex items-center gap-2">FAQ</a></li>
+                  <li><span class="text-sm text-white/40 inline-flex items-center gap-2">Mumbai</span></li>
+                  <li><a href="#contact" class="text-sm text-white/40 hover:text-white transition-colors inline-flex items-center gap-2">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3 class="text-sm font-medium text-white mb-6">Contact</h3>
+                <ul class="space-y-4">
+                  <li><a href="tel:+917208698768" class="text-sm text-white/40 hover:text-white transition-colors inline-flex items-center gap-2">t: +91 7208698768</a></li>
+                  <li><a href="mailto:dbkdigitals@gmail.com" class="text-sm text-white/40 hover:text-white transition-colors inline-flex items-center gap-2">e: dbkdigitals@gmail.com</a></li>
+                  <li><span class="text-sm text-white/40 inline-flex items-center gap-2">a: Mumbai</span></li>
+                  <li><a href="https://wa.me/919930195827" class="text-sm text-white/40 hover:text-white transition-colors inline-flex items-center gap-2">WhatsApp: +91 99301 95827</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3 class="text-sm font-medium text-white mb-6">Legal</h3>
+                <ul class="space-y-4">
+                  <li><span class="text-sm text-white/40 inline-flex items-center gap-2">Privacy</span></li>
+                  <li><span class="text-sm text-white/40 inline-flex items-center gap-2">Terms</span></li>
+                  <li><span class="text-sm text-white/40 inline-flex items-center gap-2">Security</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom py-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-white/30">© 2025 DBK Digitals. All rights reserved.</p>
+            <div class="flex items-center gap-4 text-sm text-white/30">
+              <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full accent-blue-teal-soft"></span>Providing creative ideas for your business</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <div class="mobile-cta-bar md:hidden">
+      <a href="https://wa.me/919930195827">WhatsApp</a>
+      <a href="tel:+917208698768">Call</a>
+      <a href="mailto:dbkdigitals@gmail.com">Email</a>
+    </div>
+
+    <script>
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+      const mobileMenuPanel = document.getElementById('mobileMenuPanel');
+
+      if (mobileMenuToggle && mobileMenuPanel) {
+        mobileMenuToggle.addEventListener('click', () => {
+          const isOpen = mobileMenuPanel.classList.toggle('open');
+          mobileMenuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        mobileMenuPanel.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            mobileMenuPanel.classList.remove('open');
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
